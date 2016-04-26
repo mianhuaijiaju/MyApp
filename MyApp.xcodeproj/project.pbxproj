@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		96E0F1330BC14EE65246C51D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE4C38C64AC45012EA6B530 /* libPods.a */; };
-		E295AEDA1CCF5A8000B3B9F4 /* BYQ_Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AED41CCF5A8000B3B9F4 /* BYQ_Camera.m */; };
-		E295AEDB1CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AED71CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.m */; };
-		E295AEDC1CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AED91CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.m */; };
-		E295AEDF1CCF5D1100B3B9F4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEDE1CCF5D1100B3B9F4 /* QRCodeViewController.m */; };
+		E295AEEF1CCF685700B3B9F4 /* BYQ_Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE31CCF685700B3B9F4 /* BYQ_Camera.m */; };
+		E295AEF01CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE61CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m */; };
+		E295AEF11CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE81CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m */; };
+		E295AEF21CCF685700B3B9F4 /* README_Camera.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E295AEE91CCF685700B3B9F4 /* README_Camera.rtf */; };
+		E295AEF31CCF685700B3B9F4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEEC1CCF685700B3B9F4 /* QRCodeViewController.m */; };
+		E295AEF41CCF685700B3B9F4 /* README_QRCode.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E295AEED1CCF685700B3B9F4 /* README_QRCode.rtf */; };
+		E295AEF51CCF685700B3B9F4 /* README_Test.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E295AEEE1CCF685700B3B9F4 /* README_Test.rtf */; };
 		E29A63471CCDC44300A78A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63461CCDC44300A78A0E /* main.m */; };
 		E29A634A1CCDC44300A78A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63491CCDC44300A78A0E /* AppDelegate.m */; };
 		E29A634D1CCDC44300A78A0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A634C1CCDC44300A78A0E /* ViewController.m */; };
@@ -27,15 +30,18 @@
 /* Begin PBXFileReference section */
 		52A17EB04FBD802976574CF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9E78B812D999D01CC1C519B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		E295AED31CCF5A8000B3B9F4 /* BYQ_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_Camera.h; sourceTree = "<group>"; };
-		E295AED41CCF5A8000B3B9F4 /* BYQ_Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_Camera.m; sourceTree = "<group>"; };
-		E295AED51CCF5A8000B3B9F4 /* BYQ_CameraOutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputProtocol.h; sourceTree = "<group>"; };
-		E295AED61CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputStillImage.h; sourceTree = "<group>"; };
-		E295AED71CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_CameraOutputStillImage.m; sourceTree = "<group>"; };
-		E295AED81CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputVideoData.h; sourceTree = "<group>"; };
-		E295AED91CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_CameraOutputVideoData.m; sourceTree = "<group>"; };
-		E295AEDD1CCF5D1100B3B9F4 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
-		E295AEDE1CCF5D1100B3B9F4 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		E295AEE21CCF685700B3B9F4 /* BYQ_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_Camera.h; sourceTree = "<group>"; };
+		E295AEE31CCF685700B3B9F4 /* BYQ_Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_Camera.m; sourceTree = "<group>"; };
+		E295AEE41CCF685700B3B9F4 /* BYQ_CameraOutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputProtocol.h; sourceTree = "<group>"; };
+		E295AEE51CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputStillImage.h; sourceTree = "<group>"; };
+		E295AEE61CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_CameraOutputStillImage.m; sourceTree = "<group>"; };
+		E295AEE71CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_CameraOutputVideoData.h; sourceTree = "<group>"; };
+		E295AEE81CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYQ_CameraOutputVideoData.m; sourceTree = "<group>"; };
+		E295AEE91CCF685700B3B9F4 /* README_Camera.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README_Camera.rtf; sourceTree = "<group>"; };
+		E295AEEB1CCF685700B3B9F4 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		E295AEEC1CCF685700B3B9F4 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		E295AEED1CCF685700B3B9F4 /* README_QRCode.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README_QRCode.rtf; sourceTree = "<group>"; };
+		E295AEEE1CCF685700B3B9F4 /* README_Test.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README_Test.rtf; sourceTree = "<group>"; };
 		E29A63421CCDC44300A78A0E /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A63461CCDC44300A78A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E29A63481CCDC44300A78A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,23 +95,43 @@
 		E295AED11CCF5A8000B3B9F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E295AED21CCF5A8000B3B9F4 /* Camera */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E295AED21CCF5A8000B3B9F4 /* Camera */ = {
+		E295AEE01CCF685700B3B9F4 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				E295AED31CCF5A8000B3B9F4 /* BYQ_Camera.h */,
-				E295AED41CCF5A8000B3B9F4 /* BYQ_Camera.m */,
-				E295AED51CCF5A8000B3B9F4 /* BYQ_CameraOutputProtocol.h */,
-				E295AED61CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.h */,
-				E295AED71CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.m */,
-				E295AED81CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.h */,
-				E295AED91CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.m */,
+				E295AEE11CCF685700B3B9F4 /* Camera */,
+				E295AEEA1CCF685700B3B9F4 /* QRCode */,
+				E295AEEE1CCF685700B3B9F4 /* README_Test.rtf */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		E295AEE11CCF685700B3B9F4 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E295AEE21CCF685700B3B9F4 /* BYQ_Camera.h */,
+				E295AEE31CCF685700B3B9F4 /* BYQ_Camera.m */,
+				E295AEE41CCF685700B3B9F4 /* BYQ_CameraOutputProtocol.h */,
+				E295AEE51CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.h */,
+				E295AEE61CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m */,
+				E295AEE71CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.h */,
+				E295AEE81CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m */,
+				E295AEE91CCF685700B3B9F4 /* README_Camera.rtf */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		E295AEEA1CCF685700B3B9F4 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E295AEEB1CCF685700B3B9F4 /* QRCodeViewController.h */,
+				E295AEEC1CCF685700B3B9F4 /* QRCodeViewController.m */,
+				E295AEED1CCF685700B3B9F4 /* README_QRCode.rtf */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		E29A63391CCDC44300A78A0E = {
@@ -129,6 +155,7 @@
 		E29A63441CCDC44300A78A0E /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				E295AEE01CCF685700B3B9F4 /* Test */,
 				E295AED11CCF5A8000B3B9F4 /* Controller */,
 				E29A635C1CCDC4C300A78A0E /* Model */,
 				E29A63641CCDC4C300A78A0E /* Network */,
@@ -136,8 +163,6 @@
 				E29A63491CCDC44300A78A0E /* AppDelegate.m */,
 				E29A634B1CCDC44300A78A0E /* ViewController.h */,
 				E29A634C1CCDC44300A78A0E /* ViewController.m */,
-				E295AEDD1CCF5D1100B3B9F4 /* QRCodeViewController.h */,
-				E295AEDE1CCF5D1100B3B9F4 /* QRCodeViewController.m */,
 				E29A634E1CCDC44300A78A0E /* Main.storyboard */,
 				E29A63511CCDC44300A78A0E /* Assets.xcassets */,
 				E29A63531CCDC44300A78A0E /* LaunchScreen.storyboard */,
@@ -246,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29A63551CCDC44300A78A0E /* LaunchScreen.storyboard in Resources */,
+				E295AEF41CCF685700B3B9F4 /* README_QRCode.rtf in Resources */,
+				E295AEF51CCF685700B3B9F4 /* README_Test.rtf in Resources */,
+				E295AEF21CCF685700B3B9F4 /* README_Camera.rtf in Resources */,
 				E29A63521CCDC44300A78A0E /* Assets.xcassets in Resources */,
 				E29A63501CCDC44300A78A0E /* Main.storyboard in Resources */,
 			);
@@ -294,14 +322,14 @@
 				E29A63691CCDC4C300A78A0E /* WeatherModel.m in Sources */,
 				E29A634D1CCDC44300A78A0E /* ViewController.m in Sources */,
 				E29A634A1CCDC44300A78A0E /* AppDelegate.m in Sources */,
-				E295AEDA1CCF5A8000B3B9F4 /* BYQ_Camera.m in Sources */,
+				E295AEEF1CCF685700B3B9F4 /* BYQ_Camera.m in Sources */,
 				E29A63681CCDC4C300A78A0E /* ResponseModel.m in Sources */,
 				E29A63671CCDC4C300A78A0E /* BaseModel.m in Sources */,
-				E295AEDC1CCF5A8000B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */,
-				E295AEDF1CCF5D1100B3B9F4 /* QRCodeViewController.m in Sources */,
+				E295AEF11CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */,
+				E295AEF31CCF685700B3B9F4 /* QRCodeViewController.m in Sources */,
 				E29A636A1CCDC4C300A78A0E /* NetKit.m in Sources */,
 				E29A63471CCDC44300A78A0E /* main.m in Sources */,
-				E295AEDB1CCF5A8000B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */,
+				E295AEF01CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
