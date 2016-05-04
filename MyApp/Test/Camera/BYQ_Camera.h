@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, BYQ_CameraPosition) {
 @property (nonatomic, assign) BYQ_CameraPosition cameraPosition;
 
 /**
- *  相机输出处理者 （默认：TTAVCameraOutputVideoData对象）
+ *  相机输出处理者 （默认：BYQ_CameraOutputVideoData对象）
  */
 @property (nonatomic, strong) id<BYQ_CameraOutputProtocol> outputHandler;
 

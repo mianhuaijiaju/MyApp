@@ -29,13 +29,14 @@
 @end
  
 #pragma mark - BYQ_Camera
-@interface BYQ_Camera () <AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface BYQ_Camera () <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate>
 @property (nonatomic, strong) BYQ_CameraView *cameraPreviewView;
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureDeviceInput *backCameraInput;
 @property (nonatomic, strong) AVCaptureDeviceInput *frontCameraInput;
 @property (nonatomic, strong) AVCaptureVideoDataOutput *videoDataOutput;
 @property (nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
+@property (nonatomic, strong) AVCaptureMetadataOutput *metadataOutput;
 
 @property (nonatomic, weak) AVCaptureDeviceInput *currentCameraInput;
 @property (nonatomic, weak) AVCaptureOutput *currentCameraOutput;
@@ -48,7 +49,7 @@
 
 - (void)dealloc {
     
-//    NSLog(@"%s",__FUNCTION__);
+    NSLog(@"%s",__FUNCTION__);
     
     if ([self.session isRunning]) {
         [self.session stopRunning];
@@ -208,6 +209,15 @@
     [self.outputHandler captureOutput:captureOutput didOutputSampleBuffer:sampleBuffer fromConnection:connection];
 }
 
+#pragma mark - AVCaptureMetadataOutputObjectsDelegate
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    if ([self.outputHandler outPutType] != BYQ_CameraOutputType_MetaData) {
+        return;
+    }
+    
+    [self.outputHandler captureOutput:captureOutput didOutputMetadataObjects:metadataObjects fromConnection:connection];
+}
+
 #pragma mark - Private
 
 - (void)tt_setupSession {
@@ -274,10 +284,29 @@
     if (self.currentCameraOutput) {
         [self.session removeOutput:self.currentCameraOutput];
     }
+    AVCaptureOutput *output;
     BYQ_CameraOutputType outputType = [self.outputHandler outPutType];
-    AVCaptureOutput *output = (outputType == BYQ_CameraOutputType_StillImage) ? self.stillImageOutput : self.videoDataOutput;
+    switch (outputType) {
+        case BYQ_CameraOutputType_MetaData:
+            output = self.metadataOutput;
+            break;
+        case BYQ_CameraOutputType_StillImage:
+            output = self.stillImageOutput;
+            break;
+        case BYQ_CameraOutputType_VideoData:
+            output = self.videoDataOutput;
+            break;
+        default:
+            break;
+    }
     if ([self.session canAddOutput:output]) {
         [self.session addOutput:output];
+        
+        if (outputType == BYQ_CameraOutputType_MetaData) {
+            if ([[_metadataOutput availableMetadataObjectTypes] containsObject:AVMetadataObjectTypeQRCode]) {
+                [_metadataOutput setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+            }
+        }
         
         AVCaptureConnection *connection = [output connectionWithMediaType:AVMediaTypeVideo];
         [self tt_setOrientationForConnection:connection];
@@ -362,6 +391,14 @@
         _stillImageOutput.outputSettings = @{AVVideoCodecKey: AVVideoCodecJPEG};
     }
     return _stillImageOutput;
+}
+
+- (AVCaptureMetadataOutput *)metadataOutput {
+    if (!_metadataOutput) {
+        _metadataOutput = [[AVCaptureMetadataOutput alloc] init];
+        [_metadataOutput setMetadataObjectsDelegate:self queue:self.captureQueue];
+    }
+    return _metadataOutput;
 }
 
 @end

@@ -30,6 +30,10 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     });
 }
 
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    return;
+}
+
 #pragma mark - Private
 - (UIImage *)ttav_imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
 {

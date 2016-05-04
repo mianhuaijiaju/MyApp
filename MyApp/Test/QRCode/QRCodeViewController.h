@@ -6,8 +6,7 @@
 //  Copyright © 2016年 wangchong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h> 
 
 @interface QRCodeViewController : UIViewController
 
