@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		96E0F1330BC14EE65246C51D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE4C38C64AC45012EA6B530 /* libPods.a */; };
+		E23FE0621CDC8912004FD526 /* WLLCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E23FE0611CDC8912004FD526 /* WLLCBaseModel.m */; };
+		E23FE0651CDCA8E9004FD526 /* WLLCURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23FE0641CDCA8E9004FD526 /* WLLCURLRequest.m */; };
+		E23FE0681CDCAB91004FD526 /* WLLCRequestConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E23FE0671CDCAB91004FD526 /* WLLCRequestConst.m */; };
 		E27201B41CDB76DE003CE38A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27201B31CDB76DE003CE38A /* TestViewController.m */; };
 		E295AEEF1CCF685700B3B9F4 /* BYQ_Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE31CCF685700B3B9F4 /* BYQ_Camera.m */; };
 		E295AEF01CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE61CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m */; };
@@ -22,16 +25,20 @@
 		E29A63501CCDC44300A78A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A634E1CCDC44300A78A0E /* Main.storyboard */; };
 		E29A63521CCDC44300A78A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A63511CCDC44300A78A0E /* Assets.xcassets */; };
 		E29A63551CCDC44300A78A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A63531CCDC44300A78A0E /* LaunchScreen.storyboard */; };
-		E29A63671CCDC4C300A78A0E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A635F1CCDC4C300A78A0E /* BaseModel.m */; };
 		E29A63681CCDC4C300A78A0E /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63611CCDC4C300A78A0E /* ResponseModel.m */; };
 		E29A63691CCDC4C300A78A0E /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63631CCDC4C300A78A0E /* WeatherModel.m */; };
 		E29A636A1CCDC4C300A78A0E /* NetKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63661CCDC4C300A78A0E /* NetKit.m */; };
-		E2AEF38A1CDB92B200BD7D83 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF3891CDB92B200BD7D83 /* TestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52A17EB04FBD802976574CF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9E78B812D999D01CC1C519B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E23FE0601CDC8912004FD526 /* WLLCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLCBaseModel.h; sourceTree = "<group>"; };
+		E23FE0611CDC8912004FD526 /* WLLCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLCBaseModel.m; sourceTree = "<group>"; };
+		E23FE0631CDCA8E9004FD526 /* WLLCURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLCURLRequest.h; sourceTree = "<group>"; };
+		E23FE0641CDCA8E9004FD526 /* WLLCURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLCURLRequest.m; sourceTree = "<group>"; };
+		E23FE0661CDCAB91004FD526 /* WLLCRequestConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLCRequestConst.h; sourceTree = "<group>"; };
+		E23FE0671CDCAB91004FD526 /* WLLCRequestConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLCRequestConst.m; sourceTree = "<group>"; };
 		E27201B21CDB76DE003CE38A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		E27201B31CDB76DE003CE38A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		E295AEE21CCF685700B3B9F4 /* BYQ_Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYQ_Camera.h; sourceTree = "<group>"; };
@@ -56,16 +63,12 @@
 		E29A63511CCDC44300A78A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29A63541CCDC44300A78A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29A63561CCDC44300A78A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E29A635E1CCDC4C300A78A0E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		E29A635F1CCDC4C300A78A0E /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		E29A63601CCDC4C300A78A0E /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
 		E29A63611CCDC4C300A78A0E /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 		E29A63621CCDC4C300A78A0E /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
 		E29A63631CCDC4C300A78A0E /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 		E29A63651CCDC4C300A78A0E /* NetKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetKit.h; sourceTree = "<group>"; };
 		E29A63661CCDC4C300A78A0E /* NetKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetKit.m; sourceTree = "<group>"; };
-		E2AEF3881CDB92B200BD7D83 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
-		E2AEF3891CDB92B200BD7D83 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		EEE4C38C64AC45012EA6B530 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,10 +206,8 @@
 		E29A635D1CCDC4C300A78A0E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E29A635E1CCDC4C300A78A0E /* BaseModel.h */,
-				E29A635F1CCDC4C300A78A0E /* BaseModel.m */,
-				E2AEF3881CDB92B200BD7D83 /* TestModel.h */,
-				E2AEF3891CDB92B200BD7D83 /* TestModel.m */,
+				E23FE0601CDC8912004FD526 /* WLLCBaseModel.h */,
+				E23FE0611CDC8912004FD526 /* WLLCBaseModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -216,6 +217,10 @@
 			children = (
 				E29A63651CCDC4C300A78A0E /* NetKit.h */,
 				E29A63661CCDC4C300A78A0E /* NetKit.m */,
+				E23FE0631CDCA8E9004FD526 /* WLLCURLRequest.h */,
+				E23FE0641CDCA8E9004FD526 /* WLLCURLRequest.m */,
+				E23FE0661CDCAB91004FD526 /* WLLCRequestConst.h */,
+				E23FE0671CDCAB91004FD526 /* WLLCRequestConst.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -329,16 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AEF38A1CDB92B200BD7D83 /* TestModel.m in Sources */,
+				E23FE0651CDCA8E9004FD526 /* WLLCURLRequest.m in Sources */,
 				E29A63691CCDC4C300A78A0E /* WeatherModel.m in Sources */,
 				E29A634D1CCDC44300A78A0E /* ViewController.m in Sources */,
 				E29A634A1CCDC44300A78A0E /* AppDelegate.m in Sources */,
 				E295AEEF1CCF685700B3B9F4 /* BYQ_Camera.m in Sources */,
+				E23FE0681CDCAB91004FD526 /* WLLCRequestConst.m in Sources */,
 				E29A63681CCDC4C300A78A0E /* ResponseModel.m in Sources */,
-				E29A63671CCDC4C300A78A0E /* BaseModel.m in Sources */,
 				E27201B41CDB76DE003CE38A /* TestViewController.m in Sources */,
 				E295AEF11CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */,
 				E295AEF31CCF685700B3B9F4 /* QRCodeViewController.m in Sources */,
+				E23FE0621CDC8912004FD526 /* WLLCBaseModel.m in Sources */,
 				E29A636A1CCDC4C300A78A0E /* NetKit.m in Sources */,
 				E29A63471CCDC44300A78A0E /* main.m in Sources */,
 				E295AEF01CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */,
