@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96E0F1330BC14EE65246C51D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE4C38C64AC45012EA6B530 /* libPods.a */; };
-		E27201B41CDB76DE003CE38A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27201B31CDB76DE003CE38A /* TestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E27201B41CDB76DE003CE38A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27201B31CDB76DE003CE38A /* TestViewController.m */; };
 		E295AEEF1CCF685700B3B9F4 /* BYQ_Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE31CCF685700B3B9F4 /* BYQ_Camera.m */; };
 		E295AEF01CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE61CCF685700B3B9F4 /* BYQ_CameraOutputStillImage.m */; };
 		E295AEF11CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = E295AEE81CCF685700B3B9F4 /* BYQ_CameraOutputVideoData.m */; };
@@ -26,7 +26,7 @@
 		E29A63681CCDC4C300A78A0E /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63611CCDC4C300A78A0E /* ResponseModel.m */; };
 		E29A63691CCDC4C300A78A0E /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63631CCDC4C300A78A0E /* WeatherModel.m */; };
 		E29A636A1CCDC4C300A78A0E /* NetKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A63661CCDC4C300A78A0E /* NetKit.m */; };
-		E2AEF38A1CDB92B200BD7D83 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF3891CDB92B200BD7D83 /* TestModel.m */; settings = {ASSET_TAGS = (); }; };
+		E2AEF38A1CDB92B200BD7D83 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF3891CDB92B200BD7D83 /* TestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -232,7 +232,6 @@
 				E29A633F1CCDC44300A78A0E /* Frameworks */,
 				E29A63401CCDC44300A78A0E /* Resources */,
 				08F52F2D24B347F0FF9CDB66 /* Copy Pods Resources */,
-				10BFA446902901E88D44854E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,21 +305,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		10BFA446902901E88D44854E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56A22ADF164EE1BC0E1D4E60 /* Check Pods Manifest.lock */ = {

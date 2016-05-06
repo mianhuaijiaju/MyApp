@@ -43,18 +43,6 @@
             @(NSLayoutAttributeCenterX)  : @"centerX",
             @(NSLayoutAttributeCenterY)  : @"centerY",
             @(NSLayoutAttributeBaseline) : @"baseline",
-            
-#if TARGET_OS_IPHONE || TARGET_OS_TV
-            @(NSLayoutAttributeLeftMargin)           : @"leftMargin",
-            @(NSLayoutAttributeRightMargin)          : @"rightMargin",
-            @(NSLayoutAttributeTopMargin)            : @"topMargin",
-            @(NSLayoutAttributeBottomMargin)         : @"bottomMargin",
-            @(NSLayoutAttributeLeadingMargin)        : @"leadingMargin",
-            @(NSLayoutAttributeTrailingMargin)       : @"trailingMargin",
-            @(NSLayoutAttributeCenterXWithinMargins) : @"centerXWithinMargins",
-            @(NSLayoutAttributeCenterYWithinMargins) : @"centerYWithinMargins",
-#endif
-            
         };
     
     });
@@ -66,7 +54,7 @@
     static dispatch_once_t once;
     static NSDictionary *descriptionMap;
     dispatch_once(&once, ^{
-#if TARGET_OS_IPHONE || TARGET_OS_TV
+#if TARGET_OS_IPHONE
         descriptionMap = @{
             @(MASLayoutPriorityDefaultHigh)      : @"high",
             @(MASLayoutPriorityDefaultLow)       : @"low",
@@ -106,16 +94,16 @@
 
     [description appendFormat:@" %@", [self.class descriptionForObject:self.firstItem]];
     if (self.firstAttribute != NSLayoutAttributeNotAnAttribute) {
-        [description appendFormat:@".%@", self.class.layoutAttributeDescriptionsByValue[@(self.firstAttribute)]];
+        [description appendFormat:@".%@", [self.class.layoutAttributeDescriptionsByValue objectForKey:@(self.firstAttribute)]];
     }
 
-    [description appendFormat:@" %@", self.class.layoutRelationDescriptionsByValue[@(self.relation)]];
+    [description appendFormat:@" %@", [self.class.layoutRelationDescriptionsByValue objectForKey:@(self.relation)]];
 
     if (self.secondItem) {
         [description appendFormat:@" %@", [self.class descriptionForObject:self.secondItem]];
     }
     if (self.secondAttribute != NSLayoutAttributeNotAnAttribute) {
-        [description appendFormat:@".%@", self.class.layoutAttributeDescriptionsByValue[@(self.secondAttribute)]];
+        [description appendFormat:@".%@", [self.class.layoutAttributeDescriptionsByValue objectForKey:@(self.secondAttribute)]];
     }
     
     if (self.multiplier != 1) {
@@ -131,7 +119,7 @@
     }
 
     if (self.priority != MASLayoutPriorityRequired) {
-        [description appendFormat:@" ^%@", self.class.layoutPriorityDescriptionsByValue[@(self.priority)] ?: [NSNumber numberWithDouble:self.priority]];
+        [description appendFormat:@" ^%@", [self.class.layoutPriorityDescriptionsByValue objectForKey:@(self.priority)] ?: [NSNumber numberWithDouble:self.priority]];
     }
 
     [description appendString:@">"];
