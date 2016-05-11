@@ -53,6 +53,7 @@ PODS:
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
   - Masonry (0.6.0)
+  - MJRefresh (3.1.0)
   - RegexKitLite (4.0)
   - RPJSONValidator (0.2.0)
   - SDWebImage (3.7.5):
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - libextobjc (~> 0.4.1)
   - Mantle (~> 2.0.7)
   - Masonry (= 0.6.0)
+  - MJRefresh
   - RegexKitLite (~> 4.0)
   - RPJSONValidator (~> 0.2.0)
   - SDWebImage (~> 3.7.2)
@@ -73,6 +75,7 @@ SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: 695dcee5cf90504cc83d85c40e0bd3f4376ed583
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461

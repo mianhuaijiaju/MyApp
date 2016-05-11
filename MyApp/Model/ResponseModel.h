@@ -6,11 +6,11 @@
 //  Copyright © 2016年 wangchong. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import "WLLCBaseModel.h"
 
 @class WeatherModel;
 
-@interface ResponseModel : BaseModel
+@interface ResponseModel : WLLCBaseModel
 
 @property (nonatomic, strong) NSNumber *errNum;
 @property (nonatomic, copy) NSString *errMsg;

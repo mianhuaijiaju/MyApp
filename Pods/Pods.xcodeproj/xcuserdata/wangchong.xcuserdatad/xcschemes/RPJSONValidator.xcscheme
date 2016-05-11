@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B103F59FF88133E099E873C3"
+               BlueprintIdentifier = "85A1C662F6AF2A3BA36CA4DA"
                BuildableName = "libRPJSONValidator.a"
                BlueprintName = "RPJSONValidator"
                ReferencedContainer = "container:Pods.xcodeproj">

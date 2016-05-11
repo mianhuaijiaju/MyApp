@@ -6,9 +6,9 @@
 //  Copyright © 2016年 wangchong. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import "WLLCBaseModel.h"
 
-@interface WeatherModel : BaseModel
+@interface WeatherModel : WLLCBaseModel
 
 @property (nonatomic, copy) NSString *cityname_ch;
 @property (nonatomic, copy) NSString *cityname_pinyin;
